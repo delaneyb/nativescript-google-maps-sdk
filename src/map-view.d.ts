@@ -1,8 +1,5 @@
-import { Point, View } from "tns-core-modules/ui/core/view";
-import { Property } from "tns-core-modules/ui/core/properties";
-import { Image } from "tns-core-modules/ui/image";
-import { Color } from "tns-core-modules/color";
-import { EventData } from "tns-core-modules/data/observable";
+import { Point } from "@nativescript/core/ui/core/view";
+import { Property, View, Image, Color, EventData } from "@nativescript/core";
 
 export class IndoorLevel {
     public name: string;
@@ -108,7 +105,8 @@ export const paddingProperty: Property<MapView, number | number[]>;
 
 export class UISettings {
     // Whether the compass is enabled/disabled.
-    compassEnabled: boolean;
+    compassEnabled(): boolean;
+    compassEnabled(value: boolean): boolean;
     // Whether the indoor level picker is enabled/disabled.
     indoorLevelPickerEnabled: boolean;
     // Whether the indoor level picker is enabled/disabled.

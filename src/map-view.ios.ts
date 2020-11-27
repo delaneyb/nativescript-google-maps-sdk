@@ -160,7 +160,7 @@ class MapViewDelegateImpl extends NSObject implements GMSMapViewDelegate {
                 owner.notifyMarkerTapped(marker);
             }
         }
-        return false;
+        return !owner.centerMapOnMarkerSelected;
     }
 
     public mapViewDidTapOverlay(mapView: GMSMapView, gmsOverlay: GMSOverlay): void {

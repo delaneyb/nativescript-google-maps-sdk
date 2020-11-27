@@ -34,6 +34,7 @@ export class MapView extends View {
     public tilt: number;
     public padding: number[];
     public mapAnimationsEnabled: boolean;
+    public centerMapOnMarkerSelected: boolean;
 
     public notifyMapReady(): void;
 

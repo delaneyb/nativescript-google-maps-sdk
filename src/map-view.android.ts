@@ -116,8 +116,7 @@ export class MapView extends MapViewBase {
                     onMarkerClick: (gmsMarker) => {
                         let marker: Marker = owner.findMarker((marker: Marker) => marker.android.getId() === gmsMarker.getId());
                         owner.notifyMarkerTapped(marker);
-
-                        return false;
+                        return !owner.centerMapOnMarkerSelected;
                     }
                 }));
 

@@ -8,7 +8,7 @@
         "removeComments": true,
         "preserveConstEnums": true,
         "suppressImplicitAnyIndexErrors": true,
-        "sourceMap": false,
+        "inlineSourceMap": true,
         "experimentalDecorators": true,
         "noEmitHelpers": true,
         "plugins": [{

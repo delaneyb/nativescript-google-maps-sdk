@@ -226,13 +226,7 @@ export class Circle extends Shape {
     public fillColor: Color;
 }
 
-export class Style extends Array<StyleElement> {
-    public center: Position;
-    public radius: number;
-    public strokeWidth: number;
-    public strokeColor: Color;
-    public fillColor: Color;
-}
+export type Style = Array<StyleElement>
 
 export class StyleElement {
     public featureType?: StyleFeatureType;

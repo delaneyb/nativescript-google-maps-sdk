@@ -7,10 +7,13 @@
         "noImplicitAny": false,
         "removeComments": true,
         "preserveConstEnums": true,
+        "diagnostics": true,
+        "pretty": true,
         "suppressImplicitAnyIndexErrors": true,
         "inlineSourceMap": true,
         "experimentalDecorators": true,
         "noEmitHelpers": true,
+        "skipLibCheck": true,
         "plugins": [{
             "transform": "./ns-transform-native-classes.ts",
             "type": "raw"
@@ -33,6 +36,7 @@
         "node_modules",
         "platforms",
         "demo",
-        "ng-demo"
+        "ng-demo",
+        "ns-transform-native-classes.ts"
     ]
 }

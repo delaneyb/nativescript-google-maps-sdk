@@ -12,7 +12,7 @@
         "experimentalDecorators": true,
         "noEmitHelpers": true,
         "plugins": [{
-            "transform": "@nativescript/webpack/transformers/ns-transform-native-classes",
+            "transform": "./ns-transform-native-classes.ts",
             "type": "raw"
         }],
         "lib": [

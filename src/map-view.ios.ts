@@ -589,6 +589,7 @@ export class MapView extends MapViewBase {
             this.nativeView.mapStyle = GMSMapStyle.styleWithJSONStringError(JSON.stringify(style));
             return true;
         } catch (err) {
+            console.error(`nativescript-google-maps-sdk setStyle Error:`, err)
             return false;
         }
     }
